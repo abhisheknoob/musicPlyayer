@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.conatiner{
+    width: 100%;
+    height: 100vh;
+  
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: rgb(169, 169, 169);
+}
+.main{
+ 
+  height: 50%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+align-items: center;
+box-shadow: 4px 0 6px -4px rgba(0, 0, 0, 0.5),
+ -4px 0 6px -4px rgba(0, 0, 0, 0.5);
+ background-color: #e8e7e7;
+ border-radius: 10px;
+ position: relative;
+
+  
+}
+.image img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.main h1{
+    font-weight: bolder;
+    top: 25px;
+    position: absolute;
+}
+.main h2{
+    font-weight: lighter;
+position: absolute;
+top: 90px;
+}
+.icons{
+    position: absolute;
+    bottom: 70px;
+  width: 60%;
+  justify-content: space-around;
+
+  display: flex;
+   
+    font-size: larger;
+   
+}
+.icons #play{
+  
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+
+}
+#prev,#next{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#prev:hover{
+color: gray;
+}
+#next:hover{
+    color: gray;
+}
+.icons #play:hover{
+    background-color: rgb(106, 104, 104);
+    color: black;
+}
+.anime{
+    animation : rotateimage 3s linear  infinite ;
+}
+@keyframes rotateimage {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+
+
+
+@media (max-width: 768px) {
+    .main {
+      width: 60%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main {
+      width: 80%;
+    }
+  }
